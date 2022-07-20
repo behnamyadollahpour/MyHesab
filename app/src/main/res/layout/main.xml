@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/back1"
+	android:gravity="top"
+	android:orientation="vertical"
+	android:layoutDirection="rtl">
+
+	<TextView
+		android:id="@+id/tvResult"
+		android:text="نتیجه: 0"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:textSize="40sp"
+		android:background="@drawable/back"
+		android:textColor="#FFFFFF"
+		android:paddingRight="15dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginTop="15dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="120dp"
+		android:weightSum="6">
+
+		<Button
+			android:id="@+id/yek"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="1"
+			android:layout_weight="1.2"
+			android:onClick="clickYek"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="2"
+			android:layout_weight="1.8"
+			android:id="@+id/doo"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="3"
+			android:layout_weight="1.8"
+			android:id="@+id/se"
+			android:onClick="clickThree"/>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="4"
+			android:layout_weight="1.2"
+			android:id="@+id/chahar"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="+"
+			android:id="@+id/plus"
+			android:onClick="clickPlus"
+			android:layout_weight="1.0"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="-"
+			android:id="@+id/minus"
+			android:layout_weight="1.0"
+			android:onClick="clickMinus"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="*"
+			android:id="@+id/zarb"
+			android:onClick="clickZarb"
+			android:layout_weight="1.0"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="/"
+			android:id="@+id/Divide"
+			android:layout_weight="1.0"
+			android:onClick="clickDivide"/>
+
+	</LinearLayout>
+
+
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/clear"
+			android:onClick="clickClear"
+			android:text="C"/>
+        <Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			android:text="="
+			android:id="@+id/result"
+			android:onClick="clickEqual"/>
+	</LinearLayout>
+
+</LinearLayout>
